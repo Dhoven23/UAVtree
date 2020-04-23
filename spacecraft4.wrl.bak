@@ -1,0 +1,192 @@
+#VRML V2.0 utf8
+
+Viewpoint {
+  position 0 -1000 0
+  orientation 1 0 0 1.5708
+}
+DEF MB Transform {
+  translation 20000 0 0
+  children [
+    Anchor {
+      children Viewpoint {
+      }
+    }
+    Transform {
+      children Inline {
+        url "C:\\Users\\Tesla\\Desktop\\New folder\\spacecraft4_model.wrl" 
+      }
+    }
+    DEF Flame1 Transform {
+      translation 63 -150 161.5
+      rotation 0 0 1 3.1416
+      children Shape {
+        appearance Appearance {
+          material Material {
+            transparency 0.5
+            specularColor 1 0 0
+            shininess 1
+            emissiveColor 1 0.4 0
+            diffuseColor 1 0 1
+            ambientIntensity 10
+          }
+        }
+        geometry Cone {
+          height 100
+          bottomRadius 15
+        }
+      }
+    }
+    DEF Flame2 Transform {
+      translation -63 -150 161.5
+      rotation 0 0 1 3.1416
+      children Shape {
+        appearance Appearance {
+          material Material {
+            transparency 0.5
+            specularColor 1 0 0
+            shininess 1
+            emissiveColor 1 0.4 0
+            diffuseColor 1 0 1
+            ambientIntensity 10
+          }
+        }
+        geometry Cone {
+          height 100
+          bottomRadius 15
+        }
+      }
+    }
+    DEF Flame3 Transform {
+      translation 63 -150 -161.5
+      rotation 0 0 1 3.1416
+      children Shape {
+        appearance Appearance {
+          material Material {
+            transparency 0.5
+            specularColor 1 0 0
+            shininess 1
+            emissiveColor 1 0.4 0
+            diffuseColor 1 0 1
+            ambientIntensity 10
+          }
+        }
+        geometry Cone {
+          height 100
+          bottomRadius 15
+        }
+      }
+    }
+    DEF Flame4 Transform {
+      translation -63 -150 -161.5
+      rotation 0 0 1 3.1416
+      children Shape {
+        appearance Appearance {
+          material Material {
+            transparency 0.5
+            specularColor 1 0 0
+            shininess 1
+            emissiveColor 1 0.4 0
+            diffuseColor 1 0 1
+            ambientIntensity 10
+          }
+        }
+        geometry Cone {
+          height 100
+          bottomRadius 15
+        }
+      }
+    }
+    DEF Flame5 Transform {
+      translation 161.5 -150 63
+      rotation 0 0 1 3.1416
+      children Shape {
+        appearance Appearance {
+          material Material {
+            transparency 0.5
+            specularColor 1 0 0
+            shininess 1
+            emissiveColor 1 0.4 0
+            diffuseColor 1 0 1
+            ambientIntensity 10
+          }
+        }
+        geometry Cone {
+          height 100
+          bottomRadius 15
+        }
+      }
+    }
+    DEF Flame6 Transform {
+      translation 161.5 -150 -63
+      rotation 0 0 1 3.1416
+      children Shape {
+        appearance Appearance {
+          material Material {
+            transparency 0.5
+            specularColor 1 0 0
+            shininess 1
+            emissiveColor 1 0.4 0
+            diffuseColor 1 0 1
+            ambientIntensity 10
+          }
+        }
+        geometry Cone {
+          height 100
+          bottomRadius 15
+        }
+      }
+    }
+    DEF Flame7 Transform {
+      translation -161.5 -150 63
+      rotation 0 0 1 3.1416
+      children Shape {
+        appearance Appearance {
+          material Material {
+            transparency 0.5
+            specularColor 1 0 0
+            shininess 1
+            emissiveColor 1 0.4 0
+            diffuseColor 1 0 1
+            ambientIntensity 10
+          }
+        }
+        geometry Cone {
+          height 100
+          bottomRadius 15
+        }
+      }
+    }
+    DEF Flame8 Transform {
+      translation -161.5 -150 -63
+      rotation 0 0 1 3.1416
+      children Shape {
+        appearance Appearance {
+          material Material {
+            transparency 0.5
+            specularColor 1 0 0
+            shininess 1
+            emissiveColor 1 0.4 0
+            diffuseColor 1 0 1
+            ambientIntensity 10
+          }
+        }
+        geometry Cone {
+          height 100
+          bottomRadius 15
+        }
+      }
+    }
+  ]
+}
+Transform {
+  children Shape {
+    appearance Appearance {
+      texture ImageTexture {
+        url "C:/Users/Tesla/Downloads/8k_moon.jpg" 
+      }
+    }
+    geometry Sphere {
+      radius 17371
+    }
+  }
+}

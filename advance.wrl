@@ -1,0 +1,94 @@
+#VRML V2.0 utf8
+# Created with V-Realm Builder v2.0
+# Integrated Data Systems Inc.
+# www.ids-net.com
+
+Viewpoint {
+  position -2.49041 10 14.5118
+  orientation -0.0595036 -0.998215 0.00511086 0.49208
+}
+Background {
+  skyColor [
+    0.76238 0.8 0.1427,
+    0.277798 0.219779 0.7,
+    0.222549 0.390234 0.7,
+    0.60094 0.662637 0.69 
+  ]
+  skyAngle [0.1, 1.2, 1.57]
+  groundColor [
+    0 0.8 0,
+    0.174249 0.82 0.187362,
+    0.467223 0.82 0.445801,
+    0.621997 0.67 0.600279 
+  ]
+  groundAngle [0.9, 1.5, 1.57]
+}
+Background {
+  skyColor [
+    0.76238 0.8 0.1427,
+    0.277798 0.219779 0.7,
+    0.222549 0.390234 0.7,
+    0.60094 0.662637 0.69 
+  ]
+  skyAngle [0.1, 1.2, 1.57]
+  groundColor [
+    0 0.8 0,
+    0.174249 0.82 0.187362,
+    0.467223 0.82 0.445801,
+    0.621997 0.67 0.600279 
+  ]
+  groundAngle [0.9, 1.5, 1.57]
+}
+DirectionalLight {
+}
+DEF B1 Transform {
+  children Shape {
+    appearance Appearance {
+      material Material {
+      }
+    }
+    geometry Box {
+      size 5 0.1 5
+    }
+  }
+}
+DEF B2 Transform {
+  translation 5 0 6
+  children Shape {
+    appearance Appearance {
+      material Material {
+      }
+    }
+    geometry Box {
+      size 5 0.1 5
+    }
+  }
+}
+Background {
+  skyColor 0.2 1 1
+  groundColor 0 0 0
+}
+DEF vehicle Transform {
+  translation 0 0.3 0
+  scaleOrientation 0 0 0 0
+  scale 0.001 0.001 0.001
+  children Inline {
+    url "concept.wrl" 
+  }
+}
+Transform {
+  translation 5 0.1 6
+  center 5 0 6
+  children Shape {
+    appearance Appearance {
+      material Material {
+        specularColor 1 0 0
+        diffuseColor 0 1 0
+      }
+    }
+    geometry Cylinder {
+      radius 0.75
+      height 0.01
+    }
+  }
+}
